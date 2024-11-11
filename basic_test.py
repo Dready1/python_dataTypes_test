@@ -1,4 +1,4 @@
-def int_division(x,y):
+def int_division():
     """
     Task:
     - Perform integer division of 7 by 2.
@@ -7,12 +7,11 @@ def int_division(x,y):
     - The result of the division (integer).
 
     """
-   ans = 7 / 2
-   return int(ans)
+    return 7 // 2
  
 
 
-def float_multiplication(x,y):
+def float_multiplication():
     """
     Task:
     - Multiply 3.0 by 2.
@@ -34,10 +33,7 @@ def combine_operations():
     Return:
     - The combined result (float).
     """
-    a = 4 / 2
-    b =  2 * 4
-    return sum(a,b)
-
+    
 
 def extract_word():
     """
@@ -47,8 +43,11 @@ def extract_word():
     Return:
     - The extracted word ('awesome').
     """
-    string = 'Python is awesome!'
-    return  string[2]
+    string = 'Python is awesome !'
+    return string.split()[2]
+
+
+   
     
 
 
@@ -74,11 +73,11 @@ def count_o():
     """
     
     string = 'Python is awesome!'
-    count = 0
-    for i in string:
-        if 'o' in string:
-            count += 1
-    return count        
+    # count = 0
+    # for i in string:
+    #     if 'o' in string:
+    #         count += 1
+    return string.count('o')       
 
 
 def evaluate_boolean():
